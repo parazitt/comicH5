@@ -24,12 +24,10 @@ and open the template in the editor.
 	width: 100%;
 	height: 550px;
 	margin: 0 auto 0 auto;
-        background-color: #000;
-        opacity: 0.5;
 }
 #panelViewer {
 	position: relative;
-	width: 100%;
+	width: 780px;
 	height: 550px;
 	margin: 0 auto 0 auto;
 	overflow: hidden;
@@ -41,18 +39,19 @@ and open the template in the editor.
 	top: 0px;
 	left: 0px;
 }
-
+#nextPanelBtn , #prevPanelBtn {
+    visibility: hidden;
+}
 @media only screen and (max-width : 1024px) {
 	#panelViewer {
-		
+		width: 100%;
 	}
 }
         </style>
     </head>
     <body>
-        <div>TODO write conten t</div>
         <div id="panelViewer">
-	<img src="http://russellbits.github.io/panelize/panelize-explained.png" usemap="#panelMap" border="0" width="2249" height="1350" alt="Panelize, the Comic"/>
+	<!--img src="http://russellbits.github.io/panelize/panelize-explained.png" usemap="#panelMap" border="0" width="2249" height="1350" alt="Panelize, the Comic"/>
 
 	<map name="panelMap">
 		<area shape="rect" alt="Link to Image Map Editor" title="" coords="147,992,467,1062" href="http://www.maschek.hu/imagemap/imgmap" target="_self" />
@@ -69,9 +68,20 @@ and open the template in the editor.
 		<area shape="rect" alt="Using CSS with code" title="" coords="1448,432,2232,800" href="#" />
 		<area shape="rect" alt="Size Example" title="" coords="1504,704,2232,1140" href="#" />
 		<area shape="rect" alt="Fin" title="" coords="1444,980,2216,1316" href="#" />
-		<!-- Created by Online Image Map Editor (http://www.maschek.hu/imagemap/index) -->
+		<!-- Created by Online Image Map Editor (http://www.maschek.hu/imagemap/index) -- >
 	
-	</map>
+	</map!-->
+                	<img src="example/1.jpg" usemap="#panelMap" width="1667" height="758" border="0"  alt="Panelize, the Comic"/>
+
+                <map name="panelMap">
+                    <area shape="rect" coords="5,6,522,370" href="#" />
+<area shape="rect" coords="551,10,1249,372" href="#" />
+<area shape="rect" coords="1264,10,1658,368" href="#" />
+<area shape="rect" coords="0,389,520,750" href="#" />
+<area shape="rect" coords="552,392,895,750" href="#" />
+<area shape="rect" coords="912,385,1162,749" href="#" />
+<area shape="rect" coords="1176,388,1663,752" href="#" />
+                </map>
 	
 	<a href="#" id="prevPanelBtn" class="panelControl left"><img src="btn-prev.png" alt="Previous Button" width="35" height="35"></a>
 	
